@@ -1,27 +1,9 @@
 package com.example.ecommerce.request;
 
-public class MemberCreateRequest {
+public class LoginRequest {
 
-    private String tcId;
-    private String email;
     private String username;
     private String password;
-
-    public String getTcId() {
-        return tcId;
-    }
-
-    public void setTcId(String tcId) {
-        this.tcId = tcId;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getUsername() {
         return username;

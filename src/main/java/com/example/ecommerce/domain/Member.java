@@ -6,10 +6,12 @@ import java.util.Date;
 
 @Entity
 @Table(name = "member")
-@SequenceGenerator(name = "id_generator", sequenceName = "seq_member")
+@SequenceGenerator(name = "ID_GENERATOR", sequenceName = "seq_member")
 public class Member {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(generator = "id_generator", strategy = GenerationType.SEQUENCE)
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "tc_id", unique = true, nullable = false, length = 11)

@@ -1,7 +1,5 @@
 package com.example.ecommerce.domain;
 
-import org.hibernate.engine.profile.Fetch;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;

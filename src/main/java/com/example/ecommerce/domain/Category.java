@@ -13,12 +13,12 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @Column(length = 25, nullable = false, unique = true)
+    @Column(name = "name", length = 25, nullable = false, unique = true)
     private String name;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")
-    private Category parentCategory;
+    private com.example.ecommerce.domain.Category parentCategory;
 
     @Column(name = "created_date", nullable = false)
     private Date created_date = Date.from(Instant.now());
