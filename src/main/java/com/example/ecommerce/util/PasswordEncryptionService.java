@@ -12,10 +12,4 @@ public class PasswordEncryptionService {
         var substring = password.substring(0, 3);
         return uuid.concat(substring);
     }
-
-    public String dencrypt(String password) {
-        var uuid = UUID.randomUUID().toString();
-        var substring = password.substring(3, 0);
-        return uuid.concat(substring);
-    }
 }
